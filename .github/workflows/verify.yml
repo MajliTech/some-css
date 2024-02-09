@@ -1,1 +1,12 @@
-# soon
+on:
+  # push:
+  #   branches:
+  #   - main
+  pull_request:
+    types: [opened, edited]
+  workflow_dispatch:
+# jobs:
+#   my_job:
+#     name: Verify CSS
+#     runs-on: ubuntu-22.04
+# <waiting for response from w3c (https://github.com/w3c/css-validator/issues/413)>
