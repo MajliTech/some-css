@@ -30,5 +30,6 @@ for file in css/*.css; do
 /*             GNU General Public License for more details.              */
 /*   You should have received a copy of the GNU General Public License   */
 /* along with this program.  If not, see <https://www.gnu.org/licenses/>.*/\n\n$(minify $file)"
-  echo "Minified '$file' to 'min-css/$filename.min.css'"
+  echo -n $minified_css > min-css/$filename.min.css
+  echo "MINIFIED: '$file' > 'min-css/$filename.min.css'"
 done
