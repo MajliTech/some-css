@@ -14,7 +14,7 @@
 # /* along with this program.  If not, see <https://www.gnu.org/licenses/>.*/
 
 echo "some-css verify 	Copyright (C) 2024 MajliTech
-This program comes with ABSOLUTELY NO WARRANTY.
+This Bash script comes with ABSOLUTELY NO WARRANTY.
 This is free software, and you are welcome to redistribute it under certain conditions;
 check the LICENSE file or https://www.gnu.org/licenses/
 "

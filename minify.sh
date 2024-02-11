@@ -30,7 +30,7 @@ cat <<- "EOF"
 EOF
 )
 echo "some-css minify 	Copyright (C) 2024 MajliTech
-This program comes with ABSOLUTELY NO WARRANTY.
+This Bash script comes with ABSOLUTELY NO WARRANTY.
 This is free software, and you are welcome to redistribute it under certain conditions;
 check the LICENSE file or https://www.gnu.org/licenses/
 "
