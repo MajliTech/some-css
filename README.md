@@ -10,6 +10,6 @@ Take file from [`min-css`](https://github.com/MajliTech/some-css/tree/main/min-c
 | Steam printable receipts: use less ink to print | [gh](https://github.com/MajliTech/some-css/blob/main/css/steam-printable-receipts.css) [raw](https://raw.githubusercontent.com/MajliTech/some-css/main/css/steam-printable-receipts.css) |[gh](https://github.com/MajliTech/some-css/blob/main/min-css/steam-printable-receipts.min.css) [raw](https://raw.githubusercontent.com/MajliTech/some-css/main/min-css/steam-printable-receipts.min.css)|
 
 ## How to contribiute?
-See [`CONTRIBIUTIG.md`](https://github.com/MajliTech/some-css/blob/main/CONTRIBIUTIG.md)
+See [`CONTRIBIUTIG.md`](https://github.com/MajliTech/some-css/blob/main/CONTRIBIUTIG.md). You can also create an Issue with the style you want to have.
 
 
