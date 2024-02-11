@@ -47,5 +47,5 @@ jobs:
       - name: Authenticate to git
         run: echo https://majlitech:${{ secrets.GITHUB_TOKEN }}@github.com > ~/.git-credentials
       - name: Push to repo
-        run: bash -c "git add min-css; git commit -m 'Minified CSS ($(git rev-parse HEAD | head -c 7))'; git push"
+        run: bash -c "git add min-css; git commit -m 'Minify CSS (commit $(git rev-parse HEAD | head -c 7))'; git push"
 # <waiting for response from w3c (https://github.com/w3c/css-validator/issues/413)>
