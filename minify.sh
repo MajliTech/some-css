@@ -15,7 +15,7 @@
 license_header=$(
 cat <<- "EOF"
 /*            Some CSS: https://github.com/MajliTech/some-css            */
-/*                     Copyright (C) 2024 MajliTech                      */
+/*                     Copyright (C) 2024 (author)                      */
 /*                                                                       */
 /* This program is free software: you can redistribute it and/or modify  */
 /* it under the terms of the GNU General Public License as published by  */
@@ -38,6 +38,8 @@ mkdir -p min-css
 for file in css/*.css; do
   filename=$(basename "$file" .css)
   minified_css="\n\n$(minify $file)"
-  printf "$license_header$minified_css" > min-css/$filename.min.css
+  author=$(grep -RoP 'Copyright \(C\) 2024 (\K[^ ]+)' "$file" | sed 's/^[0-9]*://')
+  header_authored=$(echo "$license_header" | sed "s/(author)/$author/")
+  printf "$header_authored$minified_css" > min-css/$filename.min.css
   echo "MINIFIED: '$file' > 'min-css/$filename.min.css'"
 done
