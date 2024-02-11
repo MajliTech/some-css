@@ -19,8 +19,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}-npm-
       - uses: actions/setup-node@v4.0.2  
-      - name: Install csstree-verifier
-        run: npm install -g csstree-verifier
+      - name: Install csstree-validator
+        run: npm install -g csstree-validator
       - name: Verify CSS
         run: bash ./verify.sh
 # <waiting for response from w3c (https://github.com/w3c/css-validator/issues/413)>
