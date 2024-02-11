@@ -19,6 +19,7 @@ jobs:
   minify:
     runs-on: ubuntu-22.04
     name: Minify CSS
+    needs: [verify]
     if: github.event_name != 'pull_request'
     steps:
       - uses: actions/checkout@v3
@@ -27,7 +28,7 @@ jobs:
       - name: Minify CSS
         run: bash ./minify.sh
       - name: Set Git User Info
-        run: bash -c 'git config --global user.name "some-css bot"; git config --global user.email "some-css.bot@majlitech.pl"'
+        run: bash -c 'git config --global user.name "some-css bot"; git config --global user.email "some-css.bot@majlitech.pl"; git config --global credential.helper store'
       - name: Authenticate to git
         run: echo https://majlitech:${{ secrets.GITHUB_TOKEN }}@github.com > ~/.git-credentials
       - name: Push to repo
