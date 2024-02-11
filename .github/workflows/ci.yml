@@ -19,7 +19,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-${{ matrix.node-version }}-npm-
       - uses: actions/setup-node@v4.0.2  
-      - run:  npm -i minify csstree-validator
+      - run:  npm -g i minify csstree-validator
   verify:
     name: Verify CSS
     runs-on: ubuntu-22.04
