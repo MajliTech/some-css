@@ -7,32 +7,11 @@ on:
     types: [opened, edited]  
   workflow_dispatch:
 jobs:
-  cache-packages:
-    name: Cache packages
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Cache npm packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.node-version }}-npm-${{ hashFiles('package*.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ matrix.node-version }}-npm-
-      - uses: actions/setup-node@v4.0.2  
-      - run:  npm -g i minify csstree-validator
   verify:
     name: Verify CSS
     runs-on: ubuntu-22.04
-    needs: [cache-packages]
     steps:
       - uses: actions/checkout@v3
-      - name: Cache npm packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.node-version }}-npm-${{ hashFiles('package*.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ matrix.node-version }}-npm-
       - uses: actions/setup-node@v4.0.2  
       - run: npm -g i csstree-validator
       - name: Verify CSS
@@ -40,20 +19,17 @@ jobs:
   minify:
     runs-on: ubuntu-22.04
     name: Minify CSS
-    needs: [verify, cache-packages]
     if: github.event_name != 'pull_request'
     steps:
       - uses: actions/checkout@v3
-      - name: Cache npm packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ matrix.node-version }}-npm-${{ hashFiles('package*.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-${{ matrix.node-version }}-npm-
       - uses: actions/setup-node@v4.0.2  
       - run: npm -g i minify
-      
       - name: Minify CSS
         run: bash ./minify.sh
+      - name: Set Git User Info
+        run: bash -c 'git config --global user.name "some-css bot"; git config --global user.email "some-css.bot@majlitech.pl"'
+      - name: Authenticate to git
+        run: echo https://majlitech:${{ secrets.GITHUB_TOKEN }}@github.com > ~/.git-credentials
+      - name: Push to repo
+        run: bash -c "git add min-css; git commit -m 'Minified CSS ($(echo "{{ github.sha }}" | head -c 7))'; git push"
 # <waiting for response from w3c (https://github.com/w3c/css-validator/issues/413)>
