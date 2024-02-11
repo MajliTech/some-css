@@ -2,11 +2,11 @@
 FAIL = 0
 for filename in "css"/*.css; do
     # Run csstree-verifier on the current file
-    csstree-verifier "$filename"
+    csstree-validator "$filename"
 
     # Check the exit status of csstree-verifier
     if [[ $? -ne 0 ]]; then
-        echo "Error: csstree-verifier failed for $filename"
+        echo "Error: csstree-validator failed for $filename"
         FAIL = 1
     fi
 done
