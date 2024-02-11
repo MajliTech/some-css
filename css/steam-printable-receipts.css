@@ -27,9 +27,6 @@
 .p-80 > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(5) > tbody:nth-child(1) > tr:nth-child(3) > td:nth-child(1) {
   background: white;
 }
-.p-80 > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(2) > td:nth-child(1) > table:nth-child(6) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(1) {
-  
-}
 .p-15 {
   background: #f2f2f2;
 }
