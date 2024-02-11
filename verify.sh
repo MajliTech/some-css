@@ -13,7 +13,11 @@
 # /*   You should have received a copy of the GNU General Public License   */
 # /* along with this program.  If not, see <https://www.gnu.org/licenses/>.*/
 
-
+echo "some-css verify 	Copyright (C) 2024 MajliTech
+This program comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to redistribute it under certain conditions;
+check the LICENSE file or https://www.gnu.org/licenses/
+"
 export FAIL=0
 for filename in "css"/*.css; do
     # Run csstree-verifier on the current file
