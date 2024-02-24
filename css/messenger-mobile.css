@@ -1,0 +1,60 @@
+/*            Some CSS: https://github.com/MajliTech/some-css            */
+/*                     Copyright (C) 2024 MajliTech                      */
+/*                                                                       */
+/* This program is free software: you can redistribute it and/or modify  */
+/* it under the terms of the GNU General Public License as published by  */
+/*   the Free Software Foundation, either version 3 of the License, or   */
+/*                  (at your option) any later version.                  */
+/*    This program is distributed in the hope that it will be useful,    */
+/*    but WITHOUT ANY WARRANTY; without even the implied warranty of     */
+/*     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the     */
+/*             GNU General Public License for more details.              */
+/*   You should have received a copy of the GNU General Public License   */
+/* along with this program.  If not, see <https://www.gnu.org/licenses/>.*/
+
+/* A very-highly experminetal CSS for running usable Messnger on mobile in a browser. */
+/* TODO:
+  1. fix the message panel to expand or shrink 
+  2. fix the whole lower panel to make it fit nicely 
+*/
+
+.xu1343h,.xq1qtft > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1), span.x4k7w5x:nth-child(2), html#facebook._9dls.__fb-light-mode._8ykn body._6s5d._71pn.system-fonts--body.segoe div#mount_0_0_EP div div div.x9f619.x1n2onr6.x1ja2u2z div.x9f619.x1n2onr6.x1ja2u2z div.x78zum5.xdt5ytf.x1n2onr6.x1ja2u2z div.x78zum5.xdt5ytf.x1n2onr6.xat3117.xxzkxad div.x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.x2lah0s.x1nhvcw1.x1qjc9v5.xozqiw3.x1q0g3np.xexx8yu.x1dr59a3 div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xcrg951.xilr8tx.x1cvmir6 div.x78zum5.xdt5ytf.x1iyjqo2.x6ikm8r.x10wlt62 div div.x1n2onr6.x1ja2u2z.x9f619.x78zum5.xdt5ytf.x2lah0s.x193iq5w div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x1iyjqo2.x2lwn1j div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xzueoph.xdj266r, html#facebook._9dls.__fb-light-mode._8ykn body._6s5d._71pn.system-fonts--body.segoe div#mount_0_0_EP div div div.x9f619.x1n2onr6.x1ja2u2z div.x9f619.x1n2onr6.x1ja2u2z div.x78zum5.xdt5ytf.x1n2onr6.x1ja2u2z div.x78zum5.xdt5ytf.x1n2onr6.xat3117.xxzkxad div.x78zum5.xdt5ytf.x1t2pt76.x1n2onr6.x1ja2u2z.x10cihs4 div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.x2lah0s.x1nhvcw1.x1qjc9v5.xozqiw3.x1q0g3np.xexx8yu.x1dr59a3 div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.xdt5ytf.x2lah0s.x193iq5w.xeuugli.xcrg951.xilr8tx.x1cvmir6 header.x6s0dn4.x78zum5.x2lah0s.x1qughib.x21xpn4.xz9dl7a.x1pi30zi.xjkvuk6.x1swvt13 div.x9f619.x1n2onr6.x1ja2u2z.x78zum5.x2lah0s.x1qughib.x1qjc9v5.xozqiw3.x1q0g3np.xexx8yu.xcud41i.x139jcc6.x4cne27.xifccgj {
+    display: none
+}
+.x1y71gwh > div:nth-child(1), .xq1qtft > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+   flex-direction: row-reverse
+}
+.x1y71gwh, .x1y71gwh > div:nth-child(1) {
+    width: 215px !important;
+    flex-basis: 100% !important
+}
+.x1y71gwh > div:nth-child(1) > div:nth-child(2) {
+    width: min-content
+}
+.x1y71gwh  {
+    height: 64px;
+    padding: 0
+    
+}
+.x1dr59a3 {
+    flex-wrap: wrap
+}
+.x1y71gwh {
+    flex-grow: 1 !important;
+    width: 90% !important;
+}
+
+#mount_0_0_m6 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+    flex-wrap: wrap;
+}
+div.xcrg951:nth-child(2) {
+    height: 90%;
+    flex-basis:75px
+}
+#\:rpe\: > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > * >  * > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)
+ {
+    display:none
+    }
+    div.x1t2pt76:nth-child(1) {
+    flex-direction: row
+    }
